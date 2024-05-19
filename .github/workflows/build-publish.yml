@@ -74,7 +74,7 @@ jobs:
             - name: add docker package to build
               run: |  
                  echo "${{ vars.JF_URL }}/${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}@${{ steps.build.outputs.digest }}" > metadata.json
-                 jf rt build-docker-create ${{ env.DOCKER_REPO }} --image-file metadata.json --build-name ${{ env.BUILD_NAME }}  --build-number ${{ env.BUILD_NUMBER }} --project ${{ vars.JF_PROJECT_KEY }}
+                 jf rt build-docker-create ${{ env.DOCKER_REPO }} --image-file metadata.json --build-name ${{ env.BUILD_NAME }}  --build-number ${{ env.BUILD_NUMBER }}
                  
             - name: publish build info
               run: |
