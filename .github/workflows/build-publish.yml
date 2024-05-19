@@ -13,7 +13,7 @@ jobs:
           DOCKER_REPO: 'docker-local'
           IMAGE_NAME: 'carmit-testing:5'
           BUILD_NUMBER: 4
-          BUILD_NAME: my-testing-build
+          BUILD_NAME: batel
           
         steps:
             - name: Checkout the repository    
